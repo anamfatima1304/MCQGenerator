@@ -1,3 +1,6 @@
+
+To help you understand how I'll approach this task, let me give you an example:
+
 {
   "1": {
     "mcq": "What is the primary focus of biology?",
@@ -50,3 +53,5 @@
     "correct": "b"
   }
 }
+
+Your task
