@@ -30,10 +30,14 @@ def get_table_data(quiz_str):
         try:
             quiz_dict=json.loads(quiz_str)
         except:
-            json_lines = quiz_str.strip("\nTo help you understand how I\'ll approach this task, let me give you an example:\n\n")
-            json_lines = json_lines.strip("Your task")
-            quiz_dict=json.loads(json_lines)
-
+            lines = quiz_str
+            start_index = lines.find('{')
+            lines = lines[start_index:]
+            lines = lines[::-1]
+            start_index = lines.find('}')
+            lines = lines[start_index:]
+            lines = lines[::-1]
+            quiz_dict=json.loads(lines)
 
         quiz_table_data=[]
         

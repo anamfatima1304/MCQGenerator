@@ -21,7 +21,7 @@ with open("C:\\Users\\HP\\MCQGenerator\\Response.json","r") as file:
     RESPONSE_JSON = json.load(file)
 
 # Creating a title for the app
-st.title("MCQs Creator Application with LangChain 8")
+st.title("MCQs Creator Application with LangChain")
 #Create a form using st.form 
 with st.form("user_inputs"):
     #File Upload
@@ -40,7 +40,7 @@ with st.form("user_inputs"):
             try:
                 text=read_file(uploaded_file)
                 response=GenerateChain(text, mcq_count, subject, tone, RESPONSE_JSON)
-                st.write(response)
+                # st.write(response)
             except Exception as e:
                 traceback.print_exception (type (e), e, e.__traceback__)
                 print("Error", e)
