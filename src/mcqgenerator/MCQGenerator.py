@@ -7,7 +7,7 @@ from src.mcqgenerator.utils import read_file,get_table_data
 from src.mcqgenerator.logger import logging
 
 #imporing necessary packages packages from langchain
-from langchain_huggingface import HuggingFaceEndpoint,ChatHuggingFace
+from langchain_huggingface import HuggingFaceEndpoint
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
@@ -27,6 +27,7 @@ llm = HuggingFaceEndpoint(
     repetition_penalty=1.03,
 )
 
+
 template="""
 Text:{text}
 You are an expert MCQ maker. Given the above text, it is your job to \
@@ -42,7 +43,6 @@ Ensure to make {number} MCQs
 quiz_generation_prompt = PromptTemplate(
     input_variables=["text", "number", "subject", "tone", "response_json"],
     template=template)
-
 
 quiz_chain=LLMChain(llm=llm,prompts=quiz_generation_prompt,output_key="quiz",verbose=True)
 

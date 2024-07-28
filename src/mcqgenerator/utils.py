@@ -27,7 +27,14 @@ def read_file(file):
 def get_table_data(quiz_str):
     try:
         # convert the quiz from a str to dict
-        quiz_dict=json.loads(quiz_str)
+        try:
+            quiz_dict=json.loads(quiz_str)
+        except:
+            json_lines = quiz_str.strip("\nTo help you understand how I\'ll approach this task, let me give you an example:\n\n")
+            json_lines = json_lines.strip("Your task")
+            quiz_dict=json.loads(json_lines)
+
+
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information
