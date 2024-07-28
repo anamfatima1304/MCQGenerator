@@ -1,0 +1,52 @@
+{
+  "1": {
+    "mcq": "What is the primary focus of biology?",
+    "options": {
+      "a": "The study of earth's geological features",
+      "b": "The scientific study of life",
+      "c": "The analysis of chemical reactions",
+      "d": "The exploration of outer space"
+    },
+    "correct": "b"
+  },
+  "2": {
+    "mcq": "Which of these is NOT a common theme in biology?",
+    "options": {
+      "a": "Evolution",
+      "b": "Energy processing",
+      "c": "Regulation of internal environment",
+      "d": "Manufacturing goods"
+    },
+    "correct": "d"
+  },
+  "3": {
+    "mcq": "What type of cells do all organisms contain?",
+    "options": {
+      "a": "Prokaryotic cells",
+      "b": "Eukaryotic cells",
+      "c": "Both prokaryotic and eukaryotic cells",
+      "d": "Neither prokaryotic nor eukaryotic cells"
+    },
+    "correct": "c"
+  },
+  "4": {
+    "mcq": "Which level of organization in biology includes studying the functioning of organs?",
+    "options": {
+      "a": "Molecular biology",
+      "b": "Anatomy and physiology",
+      "c": "Population evolution",
+      "d": "Individual organism"
+    },
+    "correct": "b"
+  },
+  "5": {
+    "mcq": "When did life first appear on Earth?",
+    "options": {
+      "a": "3.7 million years ago",
+      "b": "3.7 billion years ago",
+      "c": "1 billion years ago",
+      "d": "5.5 billion years ago"
+    },
+    "correct": "b"
+  }
+}
